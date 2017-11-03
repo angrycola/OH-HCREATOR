@@ -18,7 +18,7 @@ const resulting = ({ hero }) =>
 			{ hero.facialHair }
 		</div>
 		<div>Name:
-			{ hero.name ? hero.name : 'No validations atm' }
+			{ hero.name ? hero.name : '4+ characters' }
 		</div>
 	</div>;
 export default resulting;
