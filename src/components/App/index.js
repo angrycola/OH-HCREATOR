@@ -1,7 +1,7 @@
 import React from 'react';
-import FractionButton from '../../containers/FractionButton';
-import SkincolorSelect from '../../containers/SkincolorSelect';
-import HairstyleSelect from '../../containers/HairstyleSelect';
+import FractionSelect from '../../containers/FractionSelect';
+import SkinToneSelect from '../../containers/SkinToneSelect';
+import HairStyleSelect from '../../containers/HairStyleSelect';
 import Resulting from '../../containers/Resulting';
 
 const App = () =>
@@ -10,9 +10,12 @@ const App = () =>
 			<Resulting />
 		</div>
 		<div className='hero-options'>
-			<FractionButton />
-			<SkincolorSelect />
-			<HairstyleSelect />
+			Fraction:
+			<FractionSelect />
+			Skin tone:
+			<SkinToneSelect />
+			Hair Style:
+			<HairStyleSelect />
 		</div>
 	</div>;
 

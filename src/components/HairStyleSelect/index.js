@@ -1,7 +1,7 @@
 import React from 'react';
 
-const hairstyleSelect = () =>
+const hairStyleSelect = () =>
 	<div>
 		Hairstyle selector
 	</div>;
-export default hairstyleSelect;
+export default hairStyleSelect;

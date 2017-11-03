@@ -8,8 +8,8 @@ const resulting = ({ hero }) =>
 		<div>Hair style:
 			{ hero.hairStyle }
 		</div>
-		<div>Skin color:
-			{ hero.skinColor }
+		<div>Skin tone:
+			{ hero.skinTone }
 		</div>
 		<div>Name:
 			{ hero.name }

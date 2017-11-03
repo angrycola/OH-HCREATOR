@@ -1,4 +1,7 @@
 const constants = {
-	RANDOM_HERO: 'RANDOM_HERO'
+	RANDOM_HERO: 'RANDOM_HERO',
+	SET_FRACTION: 'SET_FRACTION',
+	SET_SKINTONE: 'SET_SKINTONE',
+	SET_HAIRSTYLE: 'SET_HAIRSTYLE',
 };
 export default constants;

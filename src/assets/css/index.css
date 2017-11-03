@@ -12,3 +12,17 @@ body {
 	grid-gap: 1px;
 	border: 1px solid black;
 }
+
+.skinToneSelector {
+	/*margin: auto 0;*/
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+	/*grid-gap: 1px;*/
+	border: 1px solid black;
+}
+
+.round-botton {	
+	border-radius: 50%;
+	padding: 10px;
+	border: 2px solid darkgrey;
+}
