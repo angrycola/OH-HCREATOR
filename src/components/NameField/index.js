@@ -25,10 +25,11 @@ class NameField extends Component {
 				<form onSubmit={ this.handleSubmit }>
 					<input
 						onChange={ this.onChangeHandler }
+						placeholder="hero's name"
 						type="text"
 						value={ this.state.charName }
 					/>
-					<button type='submit'>Add Name and Create a Hero</button>
+					<button type='submit'>Create my Hero!</button>
 					<button onClick={ this.props.hideAddNameForm }>x</button>
 				</form>
 			</div>

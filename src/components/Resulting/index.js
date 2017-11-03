@@ -2,13 +2,13 @@ import React from 'react';
 
 const resulting = ({ hero }) =>
 	<div>
-		<div>Fraction:
-			{ hero.fraction } Army
-		</div>
+		<div>Fraction: { hero.fraction } Army	</div>
 		<div>Skin tone:
+			<div className='result-box' style={{ background: `${ hero.skinTone }` }}></div>
 			{ hero.skinTone }
 		</div>
 		<div>Hair color:
+			<div className='result-box' style={{ background: `${ hero.hairColor }` }}></div>
 			{ hero.hairColor }
 		</div>
 		<div>Hair style:
@@ -18,7 +18,7 @@ const resulting = ({ hero }) =>
 			{ hero.facialHair }
 		</div>
 		<div>Name:
-			{ hero.name ? hero.name : 'unique hero name' }
+			{ hero.name ? hero.name : 'unique' }
 		</div>
 	</div>;
 export default resulting;

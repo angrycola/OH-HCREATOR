@@ -19,6 +19,13 @@ body {
 	border: 2px solid darkgrey;
 }
 
+.result-box {
+	display: inline-block;
+	width: 20px;
+	min-height: 20px;
+	border: 2px solid darkgrey;
+}
+
 .skinToneSelector {
 	display: grid;
 	grid-template-columns: repeat(9, 1fr);
