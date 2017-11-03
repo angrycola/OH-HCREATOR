@@ -8,8 +8,10 @@ export default function(state={}, action) {
 		return { ...state, fraction: action.payload };
 	case C.SET_SKINTONE:
 		return { ...state, skinTone: action.payload };
-	case C.SET_HAIRCOLOR:		
+	case C.SET_HAIRCOLOR:
 		return { ...state, hairColor: action.payload };
+	case C.SET_HAIRSTYLE:
+		return { ...state, hairStyle: action.payload };
 	default: return state;
 	}
 }

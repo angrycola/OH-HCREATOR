@@ -1,7 +1,7 @@
 export const fractions = [
 	[1, 'Royal'],
 	[2, 'National']
-]
+];
 
 export const skinTones = [
 	[1, '#F8D6B2'],
@@ -21,4 +21,14 @@ export const hairColors= [
 	[3, '#C59D81'],
 	[4, '#8E664A'],
 	[5, '#2E2017']
+];
+
+export const hairStyles = [
+	[1, 'hair_1'],
+	[2, 'hair_2'],
+	[3, 'hair_3'],
+	[4, 'hair_4'],
+	[5, 'hair_5'],
+	[6, 'hair_6'],
+	[7, 'hair_7'],
 ];

@@ -15,10 +15,10 @@ const App = () =>
 			<FractionSelect />
 			Skin tone:
 			<SkinToneSelect />
-			Hair Style:
-			<HairStyleSelect />
 			Hair Color:
 			<HairColorSelect />
+			Hair Style:
+			<HairStyleSelect />
 		</div>
 	</div>;
 

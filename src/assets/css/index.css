@@ -13,16 +13,25 @@ body {
 	border: 1px solid black;
 }
 
-.skinToneSelector {
-	/*margin: auto 0;*/
-	display: grid;
-	grid-template-columns: repeat(9, 1fr);
-	/*grid-gap: 1px;*/
-	border: 1px solid black;
-}
-
-.round-botton {	
+.round-botton {
 	border-radius: 50%;
 	padding: 10px;
 	border: 2px solid darkgrey;
+}
+
+.skinToneSelector {
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+	border: 1px solid black;
+}
+
+.hairStyleSelector {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	border: 1px solid black;
+}
+.hairStyleBox {
+	border: 1px solid black;
+	min-width: 20px;
+	min-height: 90px;
 }
