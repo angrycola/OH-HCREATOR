@@ -1,7 +1,9 @@
 import React from 'react';
 import { hairStyles } from '../../assets/data';
 
-const hairStyleSelect = ({ setHairStyle }) => {
+const hairStyleSelect = ({ setHairStyle, activeHairStyle }) => {
+
+	const activeStyle= { background: 'salmon'};
 
 	const hairStyleHandler = style => setHairStyle(style);
 
@@ -10,6 +12,7 @@ const hairStyleSelect = ({ setHairStyle }) => {
 			onClick={ () => hairStyleHandler(style[1]) }
 			key={style[0]}
 			className='hairStyleBox'
+			style={style[1] === activeHairStyle ? activeStyle : null }
 		>
 			{style[1]}
 		</div>
