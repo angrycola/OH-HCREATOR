@@ -3,7 +3,7 @@ import React from 'react';
 const resulting = ({ hero }) =>
 	<div>
 		<div>Fraction:
-			{ hero.fraction }
+			{ hero.fraction } Army
 		</div>
 		<div>Skin tone:
 			{ hero.skinTone }

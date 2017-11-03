@@ -1,14 +1,23 @@
 import React from 'react';
+import { fractions } from '../../assets/data';
 
 const fractionSelect = ({ setFraction }) => {
-	const setFractionHandle = event => {
-		setFraction(event.target.value);
+	const setFractionHandle = (fraction) => {
+		setFraction(fraction);
 	};
+
+	const renderFractions = fractions.map(fraction =>
+		<button			
+			key={ fraction[0] }
+			onClick={ () => setFractionHandle(fraction[1]) }
+		>
+			{ fraction[1] } Army
+		</button>
+	);
 
 	return (
 		<div>
-			<button onClick={ setFractionHandle } value='1'>National Army</button>
-			<button onClick={ setFractionHandle } value='2'>Royal Army</button>
+			{ renderFractions }
 		</div>
 	);
 };

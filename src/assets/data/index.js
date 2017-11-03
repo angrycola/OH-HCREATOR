@@ -1,3 +1,8 @@
+export const fractions = [
+	[1, 'Royal'],
+	[2, 'National']
+]
+
 export const skinTones = [
 	[1, '#F8D6B2'],
 	[2, '#FEBE7C'],

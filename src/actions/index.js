@@ -1,8 +1,9 @@
 import C from '../constants';
-import { skinTones, hairColors } from '../assets/data';
+import { fractions, skinTones, hairColors } from '../assets/data';
+
 
 const randomised = ({
-	fraction: Math.floor(Math.random() * 2) + 1,
+	fraction: fractions[Math.floor(Math.random() * 2)][1],
 	skinTone: skinTones[Math.floor(Math.random() * 9)][1],
 	hairStyle: Math.floor(Math.random() * 6) + 1,
 	hairColor: hairColors[Math.floor(Math.random() * 5)][1],
