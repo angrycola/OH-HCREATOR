@@ -3,6 +3,12 @@ export const fractions = [
 	[2, 'National']
 ];
 
+export const heroClasses = [
+	[1, 'Soldier'],
+	[2, 'Gunner'],
+	[3, 'Commando']
+];
+
 export const skinTones = [
 	[1, '#F8D6B2'],
 	[2, '#FEBE7C'],
@@ -43,5 +49,5 @@ export const facialHairStyle = [
 	[6, 'facial_6'],
 	[7, 'facial_7'],
 	[8, 'facial_8'],
-	[9, 'facial_9'],	
+	[9, 'facial_9'],
 ];

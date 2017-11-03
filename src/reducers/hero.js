@@ -6,6 +6,8 @@ export default function(state={}, action) {
 		return action.payload;
 	case C.SET_FRACTION:
 		return { ...state, fraction: action.payload };
+	case C.SET_HEROCLASS:
+		return { ...state, heroClass: action.payload };
 	case C.SET_SKINTONE:
 		return { ...state, skinTone: action.payload };
 	case C.SET_HAIRCOLOR:

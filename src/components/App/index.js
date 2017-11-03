@@ -1,5 +1,6 @@
 import React from 'react';
 import FractionSelect from '../../containers/FractionSelect';
+import HeroClassSelect from '../../containers/HeroClassSelect';
 import SkinToneSelect from '../../containers/SkinToneSelect';
 import HairStyleSelect from '../../containers/HairStyleSelect';
 import HairColorSelect from '../../containers/HairColorSelect';
@@ -16,6 +17,8 @@ const App = ({ ui }) =>
 		<div className='hero-options'>
 			Fraction:
 			<FractionSelect />
+			Hero class:
+			<HeroClassSelect />
 			Skin tone:
 			<SkinToneSelect />
 			Hair Color:
