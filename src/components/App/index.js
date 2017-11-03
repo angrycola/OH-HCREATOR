@@ -2,6 +2,7 @@ import React from 'react';
 import FractionSelect from '../../containers/FractionSelect';
 import SkinToneSelect from '../../containers/SkinToneSelect';
 import HairStyleSelect from '../../containers/HairStyleSelect';
+import HairColorSelect from '../../containers/HairColorSelect';
 import Resulting from '../../containers/Resulting';
 
 const App = () =>
@@ -16,6 +17,8 @@ const App = () =>
 			<SkinToneSelect />
 			Hair Style:
 			<HairStyleSelect />
+			Hair Color:
+			<HairColorSelect />
 		</div>
 	</div>;
 

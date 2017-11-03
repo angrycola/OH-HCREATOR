@@ -5,11 +5,14 @@ const resulting = ({ hero }) =>
 		<div>Fraction:
 			{ hero.fraction }
 		</div>
-		<div>Hair style:
-			{ hero.hairStyle }
-		</div>
 		<div>Skin tone:
 			{ hero.skinTone }
+		</div>
+		<div>Hair color:
+			{ hero.hairColor }
+		</div>
+		<div>Hair style:
+			{ hero.hairStyle }
 		</div>
 		<div>Name:
 			{ hero.name }
