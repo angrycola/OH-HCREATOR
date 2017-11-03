@@ -12,6 +12,8 @@ export default function(state={}, action) {
 		return { ...state, hairColor: action.payload };
 	case C.SET_HAIRSTYLE:
 		return { ...state, hairStyle: action.payload };
+	case C.SET_FACEHAIR:
+		return { ...state, facialHair: action.payload };		
 	default: return state;
 	}
 }

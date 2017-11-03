@@ -32,3 +32,16 @@ export const hairStyles = [
 	[6, 'hair_6'],
 	[7, 'hair_7'],
 ];
+
+
+export const facialHairStyle = [
+	[1, 'facial_1'],
+	[2, 'facial_2'],
+	[3, 'facial_3'],
+	[4, 'facial_4'],
+	[5, 'facial_5'],
+	[6, 'facial_6'],
+	[7, 'facial_7'],
+	[8, 'facial_8'],
+	[9, 'facial_9'],	
+];

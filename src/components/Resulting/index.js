@@ -14,6 +14,9 @@ const resulting = ({ hero }) =>
 		<div>Hair style:
 			{ hero.hairStyle }
 		</div>
+		<div>Hair style:
+			{ hero.facialHair }
+		</div>
 		<div>Name:
 			{ hero.name }
 		</div>

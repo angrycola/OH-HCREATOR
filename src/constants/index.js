@@ -4,5 +4,6 @@ const constants = {
 	SET_SKINTONE: 'SET_SKINTONE',
 	SET_HAIRCOLOR: 'SET_HAIRCOLOR',
 	SET_HAIRSTYLE: 'SET_HAIRSTYLE',
+	SET_FACEHAIR: 'SET_FACEHAIR'
 };
 export default constants;
