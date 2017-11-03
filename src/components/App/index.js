@@ -5,8 +5,10 @@ import HairStyleSelect from '../../containers/HairStyleSelect';
 import HairColorSelect from '../../containers/HairColorSelect';
 import FacialHairSelect from '../../containers/FacialHairSelect';
 import Resulting from '../../containers/Resulting';
+import ReadyButton from '../../containers/ReadyButton';
+import NameField from '../../containers/NameField';
 
-const App = () =>
+const App = ({ ui }) =>
 	<div className='container'>
 		<div className="hero-result">
 			<Resulting />
@@ -22,6 +24,12 @@ const App = () =>
 			<HairStyleSelect />
 			Facial hair select
 			<FacialHairSelect />
+			<hr />
+			<ReadyButton />
+			{ ui.showAddNameForm
+				? <NameField />
+				: null
+			}
 		</div>
 	</div>;
 

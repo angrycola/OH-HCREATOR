@@ -18,7 +18,7 @@ const resulting = ({ hero }) =>
 			{ hero.facialHair }
 		</div>
 		<div>Name:
-			{ hero.name }
+			{ hero.name ? hero.name : 'unique hero name' }
 		</div>
 	</div>;
 export default resulting;
