@@ -2,12 +2,8 @@ import React from 'react';
 import { heroClasses } from '../../assets/data';
 
 const heroClassSelect = ({ setHeroClass, activeHeroClass }) => {
-	console.log('active', activeHeroClass);
-
 	const activeStyle= { background: 'salmon'};
-
 	const heroClassHandler = heroClass => setHeroClass(heroClass);
-
 	const renderHeroClass = heroClasses.map(heroClass =>
 		<div
 			onClick={ () => heroClassHandler(heroClass[1]) }
@@ -18,7 +14,6 @@ const heroClassSelect = ({ setHeroClass, activeHeroClass }) => {
 			{heroClass[1]}
 		</div>
 	);
-
 	return (
 		<div className='hairStyleSelector'>
 			{ renderHeroClass }

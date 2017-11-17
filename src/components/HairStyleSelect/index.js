@@ -4,12 +4,11 @@ import { hairStyles } from '../../assets/data';
 const hairStyleSelect = ({ setHairStyle, activeHairStyle }) => {
 
 	const activeStyle= { background: 'salmon'};
-
 	const hairStyleHandler = style => setHairStyle(style);
 
 	const renderHairStyle = hairStyles.map(style =>
 		<div
-			onClick={ () => hairStyleHandler(style[1]) }
+			onClick={ () => hairStyleHandler(style[2]) }
 			key={style[0]}
 			className='hairStyleBox'
 			style={style[1] === activeHairStyle ? activeStyle : null }

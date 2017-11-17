@@ -9,7 +9,7 @@ const hairColorSelect = ({ setHairColor, activeHairColor }) => {
 	const renderColors = hairColors.map(color => {
 		return <div key={ color[0] }>
 			<button
-				onClick={ () => setColorHandler(color[1]) }
+				onClick={ () => setColorHandler(color[2]) }
 				className='round-botton'
 				style={
 					color[1] === activeHairColor

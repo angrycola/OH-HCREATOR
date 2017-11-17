@@ -9,7 +9,7 @@ const skinToneSelect = ({ setSkinTone, activeSkinTone }) => {
 	const renderColors = skinTones.map(tone => {
 		return <div key={ tone[0] }>
 			<button
-				onClick={ () => setToneHandler(tone[1]) }
+				onClick={ () => setToneHandler(tone[2]) }
 				className='round-botton'
 				style={
 					tone[1] === activeSkinTone

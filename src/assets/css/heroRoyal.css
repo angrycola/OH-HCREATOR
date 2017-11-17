@@ -1,0 +1,61 @@
+.resulting-wrapper {
+	width: 550px;
+	height: 520px;
+	border: 1px solid black;
+	background-image: url('../img/bg.jpg');
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+.royal-eyes, .royal-head, .royal-hair, .royal-facial {
+	position: absolute;
+	background: url('../img/royal.png') no-repeat -0px -94px;
+}
+
+.royal-body {
+	position: absolute;
+	top: 104px;
+	left: 196px;
+	width: 308px;
+	height: 420px;
+}
+
+.royal-body-soldier {
+	background: url('../img/royalSoldier.png') no-repeat;
+}
+
+.royal-body-gunner {
+	background: url('../img/royalGunner.png') no-repeat;
+}
+
+.royal-body-commando {
+	background: url('../img/royalCommando.png') no-repeat;
+}
+
+.royal-head {
+	top: 40px;
+	left: 279px;
+	width: 58px;
+	height: 90px;
+}
+
+.royal-eyes {
+	left: 279px;
+	top: 40px;
+	width: 58px;
+	height: 90px;
+}
+
+.royal-hair {
+	left: 279px;
+	top: 40px;
+	width: 58px;
+	height: 36px;
+}
+
+.royal-facial {
+	left: 279px;
+	top: 70px;
+	width: 58px;
+	height: 38px;
+}
