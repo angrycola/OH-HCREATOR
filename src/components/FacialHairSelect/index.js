@@ -3,24 +3,35 @@ import { facialHairStyle } from '../../assets/data';
 
 const facialHairSelect = ({ setFacialHairsStyle, activeFacialHair }) => {
 
-	const facialHairHandler = style => setFacialHairsStyle(style);
-	const activeStyle= { background: 'salmon'};
 
-	const renderHairStyle = facialHairStyle.map(style =>
-		<div
-			onClick={ () => facialHairHandler(style[2]) }
-			key={style[0]}
-			className='hairStyleBox'
-			style={style[1] === activeFacialHair ? activeStyle : null }
-		>
-			{style[1]}
-		</div>
-	);
+	const facialHairStyleStepLeft = () => {
+		if (activeFacialHair.num === 1) {
+			return setFacialHairsStyle(facialHairStyle[8]);
+		} else {
+			const updated = facialHairStyle[activeFacialHair.num - 2];
+			setFacialHairsStyle(updated);
+		}
+	};
+
+	const facialHairStyleStepRight = () => {
+		if (activeFacialHair.num === 9) {
+			setFacialHairsStyle(facialHairStyle[0]);
+		} else {
+			const updated = facialHairStyle[activeFacialHair.num];
+			setFacialHairsStyle(updated);
+		}
+	};
 
 	return (
 		<div className='hairStyleSelector'>
-			{ renderHairStyle }
+			<div>
+				<button onClick={ facialHairStyleStepLeft }>Left</button>
+				Facial Hairs
+				<button onClick={ facialHairStyleStepRight }>Right</button>
+			</div>
 		</div>
 	);
 };
+
+
 export default facialHairSelect;

@@ -28,15 +28,15 @@ export const hairStyles = [
 ];
 
 export const facialHairStyle = [
-	[1, 'facial_1', '-215'],
-	[2, 'facial_2', '-307'],
-	[3, 'facial_3', '-399'],
-	[4, 'facial_4', '-492'],
-	[5, 'facial_5', '-583'],
-	[6, 'facial_6', '-676'],
-	[7, 'facial_7', '-769'],
-	[8, 'facial_8', '-859'],
-	[9, 'facial_9', '-951'],
+	{ num: 1, title: 'facial_1', pos: '-215' },
+	{ num: 2, title: 'facial_2', pos: '-307' },
+	{ num: 3, title: 'facial_3', pos: '-399' },
+	{ num: 4, title: 'facial_4', pos: '-492' },
+	{ num: 5, title: 'facial_5', pos: '-583' },
+	{ num: 6, title: 'facial_6', pos: '-676' },
+	{ num: 7, title: 'facial_7', pos: '-769' },
+	{ num: 8, title: 'facial_8', pos: '-859' },
+	{ num: 9, title: 'facial_9', pos: '-951' }	
 ];
 
 

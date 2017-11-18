@@ -5,6 +5,7 @@ import SkinToneSelect from '../../containers/SkinToneSelect';
 import HairStylePicker from '../../containers/HairStylePicker';
 import HairStyleSelect from '../../containers/HairStyleSelect';
 import HairColorSelect from '../../containers/HairColorSelect';
+import FacialHairPicker from '../../containers/FacialHairPicker';
 import FacialHairSelect from '../../containers/FacialHairSelect';
 import Resulting from '../../containers/Resulting';
 import ReadyButton from '../../containers/ReadyButton';
@@ -29,6 +30,9 @@ const App = ({ ui }) =>
 			Facial hair select
 			Hair style 2:
 			<HairStyleSelect />
+			FacialHairPicker:
+			<FacialHairPicker />
+			FacialHairSelect:
 			<FacialHairSelect />
 			<hr />
 			<ReadyButton />

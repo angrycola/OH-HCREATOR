@@ -1,7 +1,6 @@
 import React from 'react';
 
 const devResulting = ({ hero }) =>
-
 	<div>
 		<div>Faction: { hero.fraction } Army	</div>
 		<div>Class: { hero.heroClass } </div>
@@ -16,9 +15,9 @@ const devResulting = ({ hero }) =>
 		<div>Hair style:
 			---> { hero.hairStyle.title }, { hero.hairStyle.pos }
 		</div>
-		<div>Hair color:
-			{ hero.facialHair }
+		<div>FacialHair Style:
+			---> { hero.facialHair.title }, { hero.facialHair.pos }
 		</div>
-		{	hero.name ? <div>{hero.name}</div> : null	}
+		{	hero.name ? <div>{ hero.name }</div> : null	}
 	</div>;
 export default devResulting;

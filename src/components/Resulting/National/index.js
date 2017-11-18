@@ -19,7 +19,7 @@ const national = ({ hero }) => {
 				<div className="national-head" style={{ backgroundPosition: `${ hero.skinTone }` }}></div>
 				<div className="national-eyes"></div>
 				<div className="national-hair" style={{ backgroundPosition: `${ hairColor }px ${ hairStyle.pos }px` }}></div>
-				<div className="national-facial" style={{ backgroundPosition: `${ -346 + (1*hairColor) }px ${ facialHair }px` }}></div>
+				<div className="national-facial" style={{ backgroundPosition: `${ -346 + (1*hairColor) }px ${ facialHair.pos }px` }}></div>
 				<div className={ `national-body ${ setCharBody() }` }></div>
 			</div>
 		</div>
