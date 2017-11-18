@@ -14,11 +14,11 @@ const devResulting = ({ hero }) =>
 			{ hero.hairColor }
 		</div>
 		<div>Hair style:
-			{ hero.hairStyle }
+			---> { hero.hairStyle.title }, { hero.hairStyle.pos }
 		</div>
 		<div>Hair color:
 			{ hero.facialHair }
 		</div>
-		{	hero.name ? <div>{hero.name}</div> : null	}		
+		{	hero.name ? <div>{hero.name}</div> : null	}
 	</div>;
 export default devResulting;

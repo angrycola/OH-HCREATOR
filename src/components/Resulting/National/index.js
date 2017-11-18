@@ -18,7 +18,7 @@ const national = ({ hero }) => {
 			<div className='resulting-wrapper'>
 				<div className="national-head" style={{ backgroundPosition: `${ hero.skinTone }` }}></div>
 				<div className="national-eyes"></div>
-				<div className="national-hair" style={{ backgroundPosition: `${ hairColor }px ${ hairStyle }px` }}></div>
+				<div className="national-hair" style={{ backgroundPosition: `${ hairColor }px ${ hairStyle.pos }px` }}></div>
 				<div className="national-facial" style={{ backgroundPosition: `${ -346 + (1*hairColor) }px ${ facialHair }px` }}></div>
 				<div className={ `national-body ${ setCharBody() }` }></div>
 			</div>

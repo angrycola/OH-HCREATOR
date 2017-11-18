@@ -7,7 +7,7 @@ const randomised = () => ({
 	heroClass: heroClasses[Math.floor(Math.random() * 3)][1],
 	skinTone: skinTones[Math.floor(Math.random() * 9)][2],
 	hairColor: hairColors[Math.floor(Math.random() * 5)][2],
-	hairStyle: hairStyles[Math.floor(Math.random() * 7)][2],
+	hairStyle: hairStyles[Math.floor(Math.random() * 7)],
 	facialHair: facialHairStyle[Math.floor(Math.random() * 9)][2],
 	name: null
 });

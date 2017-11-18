@@ -18,7 +18,7 @@ const royal = ({ hero }) => {
 			<div className='resulting-wrapper'>
 				<div className="royal-head" style={{ backgroundPosition: `${ hero.skinTone }` }}></div>
 				<div className="royal-eyes"></div>
-				<div className="royal-hair" style={{ backgroundPosition: `${ hairColor }px ${ hairStyle }px` }}></div>
+				<div className="royal-hair" style={{ backgroundPosition: `${ hairColor }px ${ hairStyle.pos }px` }}></div>
 				<div className="royal-facial" style={{ backgroundPosition: `${ -346 + (1*hairColor) }px ${ facialHair }px` }}></div>
 				<div className={ `royal-body ${ setCharBody() }` }></div>
 			</div>

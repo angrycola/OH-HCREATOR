@@ -18,15 +18,14 @@ export const hairColors= [
 ];
 
 export const hairStyles = [
-	[1, 'hair_1', '-186'],
-	[2, 'hair_2', '-278'],
-	[3, 'hair_3', '-370'],
-	[4, 'hair_4', '-462'],
-	[5, 'hair_5', '-557'],
-	[6, 'hair_6', '-646'],
-	[7, 'hair_7', '-738'],
+	{ num: 1, title: 'hair_1', pos: '-186'},
+	{ num: 2, title: 'hair_2', pos: '-278'},
+	{ num: 3, title: 'hair_3', pos: '-370'},
+	{ num: 4, title: 'hair_4', pos: '-462'},
+	{ num: 5, title: 'hair_5', pos: '-557'},
+	{ num: 6, title: 'hair_6', pos: '-646'},
+	{ num: 7, title: 'hair_7', pos: '-738'}
 ];
-
 
 export const facialHairStyle = [
 	[1, 'facial_1', '-215'],

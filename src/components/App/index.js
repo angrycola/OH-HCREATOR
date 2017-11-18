@@ -2,6 +2,7 @@ import React from 'react';
 import FractionSelect from '../../containers/FractionSelect';
 import HeroClassSelect from '../../containers/HeroClassSelect';
 import SkinToneSelect from '../../containers/SkinToneSelect';
+import HairStylePicker from '../../containers/HairStylePicker';
 import HairStyleSelect from '../../containers/HairStyleSelect';
 import HairColorSelect from '../../containers/HairColorSelect';
 import FacialHairSelect from '../../containers/FacialHairSelect';
@@ -24,8 +25,10 @@ const App = ({ ui }) =>
 			Hair Color:
 			<HairColorSelect />
 			Hair Style:
-			<HairStyleSelect />
+			<HairStylePicker />
 			Facial hair select
+			Hair style 2:
+			<HairStyleSelect />
 			<FacialHairSelect />
 			<hr />
 			<ReadyButton />

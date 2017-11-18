@@ -3,24 +3,33 @@ import { hairStyles } from '../../assets/data';
 
 const hairStyleSelect = ({ setHairStyle, activeHairStyle }) => {
 
-	const activeStyle= { background: 'salmon'};
-	const hairStyleHandler = style => setHairStyle(style);
+	const hairStyleStepLeft = () => {		
+		if (activeHairStyle.num === 1) {
+			return setHairStyle(hairStyles[6]);
+		} else {
+			const updated = hairStyles[activeHairStyle.num - 2];
+			setHairStyle(updated);
+		}
+	};
 
-	const renderHairStyle = hairStyles.map(style =>
-		<div
-			onClick={ () => hairStyleHandler(style[2]) }
-			key={style[0]}
-			className='hairStyleBox'
-			style={style[1] === activeHairStyle ? activeStyle : null }
-		>
-			{style[1]}
-		</div>
-	);
+	const hairStyleStepRight = () => {		
+		if (activeHairStyle.num === 7) {
+			setHairStyle(hairStyles[0]);
+		} else {
+			const updated = hairStyles[activeHairStyle.num];
+			setHairStyle(updated);
+		}
+	};
 
 	return (
 		<div className='hairStyleSelector'>
-			{ renderHairStyle }
+			<div>
+				<button onClick={ hairStyleStepLeft }>left</button>
+				hairs
+				<button onClick={ hairStyleStepRight }>right</button>
+			</div>
 		</div>
 	);
 };
+
 export default hairStyleSelect;
