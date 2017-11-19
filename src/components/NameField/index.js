@@ -19,18 +19,25 @@ class NameField extends Component {
 		this.setState({ charName: event.target.value });
 	}
 
+	closeModuleHandler = () => {
+		this.props.closeModule();		
+	}
+
 	render () {
 		return (
-			<form onSubmit={ this.handleSubmit } className='name-field-container'>
-				<input
-					onChange={ this.onChangeHandler }
-					placeholder='4+ characters'
-					type="text"
-					value={ this.state.charName }
-				/>
-				<button type='submit' disabled={ this.state.validName }>Create my Hero!</button>
-			</form>
-		)
+			<div>
+				<form onSubmit={ this.handleSubmit } className='name-field-container'>
+					<input
+						onChange={ this.onChangeHandler }
+						placeholder='4+ characters'
+						type="text"
+						value={ this.state.charName }
+					/>
+					<button type='submit' disabled={ this.state.validName }>Create my Hero!</button>
+				</form>
+				<div className='close-module' onClick={ this.closeModuleHandler }>Not Now</div>
+			</div>
+		);
 	}
 }
 

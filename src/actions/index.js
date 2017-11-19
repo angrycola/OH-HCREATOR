@@ -23,3 +23,4 @@ export const setCharName = name => ({ type: C.SET_CHARNAME, payload: name });
 
 export const showAddNameForm = () => ({ type: C.SHOW_FINAL_FORM });
 export const hideAddNameForm = () => ({ type: C.HIDE_FINAL_FORM });
+export const closeModule = () => ({ type: C.CLOSE_MODULE });

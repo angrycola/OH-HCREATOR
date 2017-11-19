@@ -11,7 +11,18 @@ body {
 	grid-gap: 1px;
 }
 
-.fraction-container, .skin-tone-container, .class-container, .hair-tone-container, .hair-style-container, .facial-style-container {
+/* RESULTING */
+.resulting-wrapper {
+	width: 710px;
+	height: 520px;
+	border: 1px solid darkgrey;
+	background-image: url('../img/bg.jpg');
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+/* CASES */
+.fraction-container, .skin-tone-container, .class-container, .hair-tone-container, .hair-style-container, .facial-style-container, .name-field-container {
 	margin-bottom: 20px;
 }
 
@@ -92,7 +103,7 @@ body {
 	cursor: pointer;
 }
 
-/*SELECT HAIR STYLE */
+/* SELECT HAIR STYLE */
 .hair-style-container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -106,8 +117,7 @@ body {
 	text-align: center;
 }
 
-
-/*SELECT FACIAL STYLE */
+/* SELECT FACIAL STYLE */
 .facial-style-container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -152,12 +162,16 @@ body {
 	background: white;
 }
 
-/*RESULTING */
-.resulting-wrapper {
-	width: 710px;
-	height: 520px;
+
+.close-module {
 	border: 1px solid darkgrey;
-	background-image: url('../img/bg.jpg');
-	background-repeat: no-repeat;
-	background-position: left;
+	width: 100%;
+	min-height: 30px;
+	padding-top: 12px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.close-module:hover {
+	background-color: salmon;
 }
