@@ -21,18 +21,15 @@ class NameField extends Component {
 
 	render () {
 		return (
-			<div>
-				<form onSubmit={ this.handleSubmit }>
-					<input
-						onChange={ this.onChangeHandler }
-						placeholder='4+ characters'
-						type="text"
-						value={ this.state.charName }
-					/>
-					<button type='submit' disabled={ this.state.validName }>Create my Hero!</button>
-					<button onClick={ this.props.hideAddNameForm }>x</button>
-				</form>
-			</div>
+			<form onSubmit={ this.handleSubmit } className='name-field-container'>
+				<input
+					onChange={ this.onChangeHandler }
+					placeholder='4+ characters'
+					type="text"
+					value={ this.state.charName }
+				/>
+				<button type='submit' disabled={ this.state.validName }>Create my Hero!</button>
+			</form>
 		)
 	}
 }

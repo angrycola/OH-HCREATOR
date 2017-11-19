@@ -6,16 +6,16 @@ const heroClassSelect = ({ setHeroClass, activeHeroClass }) => {
 	const heroClassHandler = heroClass => setHeroClass(heroClass);
 	const renderHeroClass = heroClasses.map(heroClass =>
 		<div
+			className='class-box'
 			onClick={ () => heroClassHandler(heroClass[1]) }
 			key={ heroClass[0] }
-			className='hairStyleBox'
 			style={ heroClass[1] === activeHeroClass ? activeStyle : null }
 		>
 			{ heroClass[1] }
 		</div>
 	);
 	return (
-		<div className='hairStyleSelector'>
+		<div className='class-container'>
 			{ renderHeroClass }
 		</div>
 	);

@@ -1,12 +1,3 @@
-.resulting-wrapper {
-	width: 550px;
-	height: 520px;
-	border: 1px solid black;
-	background-image: url('../img/bg.jpg');
-	background-repeat: no-repeat;
-	background-position: left;
-}
-
 .national-eyes, .national-head, .national-hair, .national-facial {
 	position: absolute;
 	background: url('../img/national.png') no-repeat -0px -94px;
@@ -20,15 +11,6 @@
 	height: 420px;
 }
 
-.royal-body {
-	position: absolute;
-	top: 104px;
-	left: 196px;
-	width: 308px;
-	height: 420px;
-}
-
-
 .national-body-soldier {
 	background: url('../img/nationalSoldier.png') no-repeat;
 }
@@ -41,18 +23,6 @@
 	background: url('../img/nationalCommando.png') no-repeat;
 }
 
-
-.royal-body-soldier {
-	background: url('../img/royalSoldier.png') no-repeat;
-}
-
-.royal-body-gunner {
-	background: url('../img/royalGunner.png') no-repeat;
-}
-
-.royal-body-commando {
-	background: url('../img/royalCommando.png') no-repeat;
-}
 
 .national-head {
 	top: 40px;

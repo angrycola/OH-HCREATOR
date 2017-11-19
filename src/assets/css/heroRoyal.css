@@ -1,12 +1,3 @@
-.resulting-wrapper {
-	width: 550px;
-	height: 520px;
-	border: 1px solid black;
-	background-image: url('../img/bg.jpg');
-	background-repeat: no-repeat;
-	background-position: left;
-}
-
 .royal-eyes, .royal-head, .royal-hair, .royal-facial {
 	position: absolute;
 	background: url('../img/royal.png') no-repeat -0px -94px;

@@ -12,35 +12,22 @@ import ReadyButton from '../../containers/ReadyButton';
 import NameField from '../../containers/NameField';
 
 const App = ({ ui }) =>
-	<div className='container'>
-		<div className="hero-result">
-			<Resulting />
+	<div>
+		<div className='create-hero-container'>
+			<div className="hero-result">
+				<Resulting />
+			</div>
+			<section className='hero-options'>
+				<FractionSelect />
+				<HeroClassSelect />
+				<SkinToneSelect />
+				<HairColorSelect />
+				<HairStyleSelect />
+				<FacialHairSelect />
+				<ReadyButton />
+				{ ui.showAddNameForm ? <NameField /> : null	}
+			</section>
 		</div>
-		<div className='hero-options'>
-			Fraction:
-			<FractionSelect />
-			Hero class:
-			<HeroClassSelect />
-			Skin tone:
-			<SkinToneSelect />
-			Hair Color:
-			<HairColorSelect />
-			Hair Style:
-			<HairStylePicker />
-			Facial hair select
-			Hair style 2:
-			<HairStyleSelect />
-			FacialHairPicker:
-			<FacialHairPicker />
-			FacialHairSelect:
-			<FacialHairSelect />
-			<hr />
-			<ReadyButton />
-			{ ui.showAddNameForm
-				? <NameField />
-				: null
-			}
-		</div>
-	</div>;
+	</div>
 
 export default App;

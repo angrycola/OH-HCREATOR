@@ -3,7 +3,7 @@ import { hairStyles } from '../../assets/data';
 
 const hairStyleSelect = ({ setHairStyle, activeHairStyle }) => {
 
-	const hairStyleStepLeft = () => {		
+	const hairStyleStepLeft = () => {
 		if (activeHairStyle.num === 1) {
 			return setHairStyle(hairStyles[6]);
 		} else {
@@ -12,7 +12,7 @@ const hairStyleSelect = ({ setHairStyle, activeHairStyle }) => {
 		}
 	};
 
-	const hairStyleStepRight = () => {		
+	const hairStyleStepRight = () => {
 		if (activeHairStyle.num === 7) {
 			setHairStyle(hairStyles[0]);
 		} else {
@@ -22,12 +22,10 @@ const hairStyleSelect = ({ setHairStyle, activeHairStyle }) => {
 	};
 
 	return (
-		<div className='hairStyleSelector'>
-			<div>
-				<button onClick={ hairStyleStepLeft }>left</button>
-				hairs
-				<button onClick={ hairStyleStepRight }>right</button>
-			</div>
+		<div className='hair-style-container'>
+			<div className='hair-style-box cursor-arrow' onClick={ hairStyleStepLeft }>&#8249;</div >
+			<div className='hair-style-box'>Hair Style</div>
+			<div className='hair-style-box cursor-arrow' onClick={ hairStyleStepRight }>&#8250;</div >
 		</div>
 	);
 };

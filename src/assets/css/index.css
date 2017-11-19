@@ -3,42 +3,161 @@ body {
 	width: 80%;
 	padding: 0;
 	font-family: sans-serif;
-
 }
 
-.container {
+.create-hero-container {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 1px;
-	border: 1px solid black;
 }
 
-.round-botton {
-	border-radius: 50%;
-	padding: 10px;
-	border: 2px solid darkgrey;
+.fraction-container, .skin-tone-container, .class-container, .hair-tone-container, .hair-style-container, .facial-style-container {
+	margin-bottom: 20px;
 }
 
-.result-box {
-	display: inline-block;
-	width: 20px;
-	min-height: 20px;
-	border: 2px solid darkgrey;
+.cursor-arrow {
+	cursor: pointer;
+	font-size: 17px;
 }
 
-.skinToneSelector {
+/* FRACTION */
+.fraction-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 2px;
+}
+
+.fraction-box {
+	border: 1px solid darkgrey;
+	min-height: 30px;
+	padding-top: 12px;
+	cursor: pointer;
+	text-align: center;
+}
+
+/* HERO CLASS */
+.class-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2px;
+}
+
+.class-box {
+	border: 1px solid darkgrey;
+	min-height: 30px;
+	padding-top: 12px;
+	cursor: pointer;
+	text-align: center;
+}
+
+/* SKIN TONE */
+.skin-tone-container {
+	display: grid;
+	grid-template-columns: 30% 70%;
+	grid-gap: 4px;
+}
+
+.skin-tone-box {
+	border: 1px solid darkgrey;
+	min-height: 30px;
+	padding-top: 12px;
+	text-align: center;
+}
+
+.skin-tone-colors {
 	display: grid;
 	grid-template-columns: repeat(9, 1fr);
-	border: 1px solid black;
+	grid-gap: 2px;
+	cursor: pointer;
 }
 
-.hairStyleSelector {
+/* HAIR COLOR*/
+.hair-tone-container {
 	display: grid;
-	grid-template-columns: repeat(7, 1fr);
-	border: 1px solid black;
+	grid-template-columns: 30% 70%;
+	grid-gap: 4px;
 }
-.hairStyleBox {
-	border: 1px solid black;
-	min-width: 20px;
-	min-height: 90px;
+
+.hair-tone-box {
+	border: 1px solid darkgrey;
+	min-height: 30px;
+	padding-top: 12px;
+	text-align: center;
+}
+
+.hair-tone-colors {
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+	grid-gap: 2px;
+	cursor: pointer;
+}
+
+/*SELECT HAIR STYLE */
+.hair-style-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2px;
+}
+
+.hair-style-box {
+	border: 1px solid darkgrey;
+	min-height: 30px;
+	padding-top: 12px;
+	text-align: center;
+}
+
+
+/*SELECT FACIAL STYLE */
+.facial-style-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2px;
+}
+
+.facial-style-box {
+	border: 1px solid darkgrey;
+	min-height: 30px;
+	padding-top: 12px;
+	text-align: center;
+}
+
+/* NAMEFIELD */
+.name-field-container {
+	margin-top: -2px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 2px;
+}
+
+.name-field-container input[type='text'] {
+	border: 1px solid darkgrey;
+	min-height: 40px;
+	width: 96.7%;
+	padding-left: 10px;
+	font-size: 15px;
+}
+
+.name-field-container input[type='text']:focus {
+	border: 1px solid salmon;
+}
+
+.name-field-container button {
+	background: salmon;
+	border: 1px solid darkgrey;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.name-field-container button:disabled {
+	background: white;
+}
+
+/*RESULTING */
+.resulting-wrapper {
+	width: 710px;
+	height: 520px;
+	border: 1px solid darkgrey;
+	background-image: url('../img/bg.jpg');
+	background-repeat: no-repeat;
+	background-position: left;
 }

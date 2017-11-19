@@ -3,24 +3,25 @@ import { fractions } from '../../assets/data';
 
 const fractionSelect = ({ setFraction, activeFraction }) => {
 
-	const activeStyle = { color: 'salmon' }
+	const activeStyle = { backgroundColor: 'salmon' }
 
 	const setFractionHandle = (fraction) => {
 		setFraction(fraction);
 	};
 
 	const renderFractions = fractions.map(fraction =>
-		<button
+		<div
+			className='fraction-box'
 			key={ fraction[0] }
 			onClick={ () => setFractionHandle(fraction[1]) }
 			style={ fraction[1] === activeFraction ? activeStyle : null }
 		>
 			{ fraction[1] } Army
-		</button>
+		</div>
 	);
 
 	return (
-		<div>
+		<div className='fraction-container'>
 			{ renderFractions }
 		</div>
 	);

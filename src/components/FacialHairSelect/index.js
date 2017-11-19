@@ -23,12 +23,10 @@ const facialHairSelect = ({ setFacialHairsStyle, activeFacialHair }) => {
 	};
 
 	return (
-		<div className='hairStyleSelector'>
-			<div>
-				<button onClick={ facialHairStyleStepLeft }>Left</button>
-				Facial Hairs
-				<button onClick={ facialHairStyleStepRight }>Right</button>
-			</div>
+		<div className='facial-style-container'>
+			<div className='facial-style-box cursor-arrow' onClick={ facialHairStyleStepLeft }>&#8249;</div>
+			<div className='facial-style-box'>Facial Hair</div>
+			<div className='facial-style-box cursor-arrow' onClick={ facialHairStyleStepRight }>&#8250;</div>
 		</div>
 	);
 };
