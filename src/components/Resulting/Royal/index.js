@@ -2,7 +2,7 @@ import React from 'react';
 import '../../../assets/css/heroRoyal.css';
 
 const royal = ({ hero }) => {
-	const { hairStyle, hairColor, facialHair, heroClass } = hero;
+	const { hairStyle, hairColor, facialHair, heroClass, skinTone } = hero;
 	const setCharBody = () => {
 		if (heroClass === 'Soldier') {
 			return 'royal-body-soldier';
@@ -16,10 +16,10 @@ const royal = ({ hero }) => {
 	return (
 		<div>
 			<div className='resulting-wrapper'>
-				<div className="royal-head" style={{ backgroundPosition: `${ hero.skinTone }` }}></div>
+				<div className="royal-head" style={{ backgroundPosition: `${ skinTone.pos }` }}></div>
 				<div className="royal-eyes"></div>
-				<div className="royal-hair" style={{ backgroundPosition: `${ hairColor }px ${ hairStyle.pos }px` }}></div>
-				<div className="royal-facial" style={{ backgroundPosition: `${ -346 + (1*hairColor) }px ${ facialHair.pos }px` }}></div>
+				<div className="royal-hair" style={{ backgroundPosition: `${ hairColor.pos }px ${ hairStyle.pos }px` }}></div>
+				<div className="royal-facial" style={{ backgroundPosition: `${ -346 + (1*hairColor.pos) }px ${ facialHair.pos }px` }}></div>
 				<div className={ `royal-body ${ setCharBody() }` }></div>
 			</div>
 		</div>

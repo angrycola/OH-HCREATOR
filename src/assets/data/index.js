@@ -10,11 +10,11 @@ export const heroClasses = [
 ];
 
 export const hairColors= [
-	[1, '#F8E5B2', '-0'],
-	[2, '#FF7352', '-69'],
-	[3, '#C59D81', '-138'],
-	[4, '#8E664A', '-207'],
-	[5, '#2E2017', '-276']
+	{ num: 1, color: '#F8E5B2', pos: '-0' },
+	{ num: 2, color: '#FF7352', pos: '-69' },
+	{ num: 3, color: '#C59D81', pos: '-138' },
+	{ num: 4, color: '#8E664A', pos: '-207' },
+	{ num: 5, color: '#2E2017', pos: '-276' }
 ];
 
 export const hairStyles = [
@@ -36,18 +36,17 @@ export const facialHairStyle = [
 	{ num: 6, title: 'facial_6', pos: '-676' },
 	{ num: 7, title: 'facial_7', pos: '-769' },
 	{ num: 8, title: 'facial_8', pos: '-859' },
-	{ num: 9, title: 'facial_9', pos: '-951' }	
+	{ num: 9, title: 'facial_9', pos: '-951' }
 ];
 
-
 export const skinTones = [
-	[1, '#F8D6B2', '-552px -2px'],
-	[2, '#FEBE7C', '-483px -2px' ],
-	[3, '#EA943C', '-414px -2px'],
-	[4, '#EC8212', '-345px -2px'],
-	[5, '#CC7820', '-276px -2px'],
-	[6, '#AC5C00', '-207px -2px'],
-	[7, '#8A4A00', '-138px -2px'],
-	[8, '#682800', '-69px -2px'],
-	[9, '#2E2017', '-0px -2px']
+	{ num: 1, color: '#F8D6B2', pos: '-0px -2px' },
+	{ num: 2, color: '#FEBE7C', pos: '-69px -2px' },
+	{ num: 3, color: '#EA943C', pos: '-138px -2px' },
+	{ num: 4, color: '#EC8212', pos: '-207px -2px' },
+	{ num: 5, color: '#AC5C00', pos: '-345px -2px' },
+	{ num: 6, color: '#CC7820', pos: '-276px -2px' },
+	{ num: 7, color: '#8A4A00', pos: '-414px -2px' },
+	{ num: 8, color: '#682800', pos: '-483px -2px' },
+	{ num: 9, color: '#2E2017', pos: '-552px -2px' }
 ];

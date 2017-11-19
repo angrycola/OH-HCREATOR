@@ -7,11 +7,11 @@ const heroClassSelect = ({ setHeroClass, activeHeroClass }) => {
 	const renderHeroClass = heroClasses.map(heroClass =>
 		<div
 			onClick={ () => heroClassHandler(heroClass[1]) }
-			key={heroClass[0]}
+			key={ heroClass[0] }
 			className='hairStyleBox'
 			style={ heroClass[1] === activeHeroClass ? activeStyle : null }
 		>
-			{heroClass[1]}
+			{ heroClass[1] }
 		</div>
 	);
 	return (

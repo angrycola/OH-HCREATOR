@@ -3,18 +3,18 @@ import { skinTones } from '../../assets/data';
 
 const skinToneSelect = ({ setSkinTone, activeSkinTone }) => {
 
-	const setToneHandler = (tone) => setSkinTone(tone);
+	const setToneHandler = tone => setSkinTone(tone);
 	const activeStyle = { border: '2px solid red' };
 
 	const renderColors = skinTones.map(tone => {
-		return <div key={ tone[0] }>
+		return <div key={ tone.num }>
 			<button
-				onClick={ () => setToneHandler(tone[2]) }
+				onClick={ () => setToneHandler(tone) }
 				className='round-botton'
 				style={
-					tone[1] === activeSkinTone
-						? {...activeStyle, ...{ backgroundColor: `${ tone[1]}` }}
-						: { backgroundColor: `${ tone[1]}` }
+					tone.color === activeSkinTone.color
+						? { ...activeStyle, ...{ backgroundColor: `${ tone.color }` }}
+						: { backgroundColor: `${ tone.color }` }
 				}
 			/>
 		</div>;

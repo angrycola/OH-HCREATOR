@@ -13,7 +13,7 @@ const fractionSelect = ({ setFraction, activeFraction }) => {
 		<button
 			key={ fraction[0] }
 			onClick={ () => setFractionHandle(fraction[1]) }
-			style={fraction[1] === activeFraction ? activeStyle : null }
+			style={ fraction[1] === activeFraction ? activeStyle : null }
 		>
 			{ fraction[1] } Army
 		</button>

@@ -5,8 +5,8 @@ import { fractions, heroClasses, skinTones, hairColors, hairStyles, facialHairSt
 const randomised = () => ({
 	fraction: fractions[Math.floor(Math.random() * 2)][1],
 	heroClass: heroClasses[Math.floor(Math.random() * 3)][1],
-	skinTone: skinTones[Math.floor(Math.random() * 9)][2],
-	hairColor: hairColors[Math.floor(Math.random() * 5)][2],
+	skinTone: skinTones[Math.floor(Math.random() * 9)],
+	hairColor: hairColors[Math.floor(Math.random() * 5)],
 	hairStyle: hairStyles[Math.floor(Math.random() * 7)],
 	facialHair: facialHairStyle[Math.floor(Math.random() * 9)],
 	name: null

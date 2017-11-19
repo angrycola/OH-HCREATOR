@@ -11,7 +11,7 @@ const facialHairPicker = ({ setFacialHairsStyle, activeFacialHair }) => {
 			onClick={ () => facialHairHandler(style) }
 			key={ style.num }
 			className='hairStyleBox'
-			style={ style[1] === activeFacialHair ? activeStyle : null }
+			style={ style.title === activeFacialHair.title ? activeStyle : null }
 		>
 			{ style[1] }
 		</div>
